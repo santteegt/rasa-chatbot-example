@@ -60,19 +60,19 @@ Here, you can specify the `--nlu-threshold`, so the fallback action or the utter
 [Story graph](graph.png) shows an overview of the conversational paths defined in [stories.md](stories.md).
 To re-generate the graph see [documentation](http://www.rasa.com/docs/core/debugging/#visualizing-your-stories).
 
-### 3. Deploying custom actions endpoint
+### 4. Deploying custom actions endpoint
 
 ```bash
 (rasa) $ python -m rasa_core_sdk.endpoint --actions actions
 ```
 
-### 4. Test your chatbot locally
+### 5. Test your chatbot locally
 
 ```bash
 (rasa) $ python -m rasa_core.run -d models/dialogue -u models/current/nlu
 ```
 
-### 5. Connect to Facebook Messenger (Optional)
+### 6. Connect to Facebook Messenger (Optional)
 
 1. First of all, you need to set up a Facebook app and a page. To create the app go to: [https://developers.facebook.com/](https://developers.facebook.com/) and click on “Add a new app”.
 1. Go to the Basic Settings of the app and copy the ${APP_SECRET} value.
@@ -94,7 +94,7 @@ To re-generate the graph see [documentation](http://www.rasa.com/docs/core/debug
 ```
 1. Now you can test your chatbot by sending messages to your Page through FB Messenger.
 
-### 6. Interactive Learning
+### 7. Interactive Learning
 
 [Interactive Learning](http://www.rasa.com/docs/core/interactive_learning/) is a powerful way to explore what your bot can do, and the easiest way to fix any mistakes it makes, while covering different possible scenarios that were not taken into account when defining your chatbot domain & stories.
 
