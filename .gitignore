@@ -1,5 +1,7 @@
-fb_credentials.yml
+.idea
 
 models/
 
 *.log
+
+__pycache__/**
