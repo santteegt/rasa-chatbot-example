@@ -48,3 +48,17 @@
 - not very good
 - extremly sad
 - so sad
+
+## intent:get_todo_list
+- get my todo list
+- todo list
+- what is my pending tasks
+- pending tasks
+- my todo list
+
+## intent:get_posts_list
+- what did I posted so far ?
+- get my posts list
+- posts list
+- last posts
+- my last posts

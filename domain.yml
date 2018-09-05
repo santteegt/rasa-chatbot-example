@@ -5,17 +5,29 @@ intents:
   - mood_deny
   - mood_great
   - mood_unhappy
+  - get_todo_list
+  - get_posts_list
 
 actions:
+- action_todo_api_call
+- action_posts_api_call
+- action_custom_greet
 - utter_greet
 - utter_cheer_up
 - utter_did_that_help
 - utter_happy
 - utter_goodbye
+- utter_default
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey {user_name}! How are you?"
+    buttons:
+      - title: "great"
+        payload: "great"
+      - title: "super sad"
+        payload: "super sad"
+  - text: "What's up {user_name}? how are you doing?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -29,3 +41,12 @@ templates:
 
   utter_goodbye:
   - text: "Bye"
+  - text: "See ya!"
+
+  utter_default:
+  - text: "Sorry. I Can't understand what you're saying. Could you be more specific?"
+
+slots:
+  user_name:
+    type: text
+    initial_value: Average Joe
