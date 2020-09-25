@@ -119,7 +119,7 @@ sklearn-crfsuite==0.3.6
 slackclient==1.2.1
 tabulate==0.8.2
 tensorboard==1.10.0
-tensorflow==1.10.0
+tensorflow==1.15.4
 termcolor==1.1.0
 terminado==0.8.1
 testpath==0.3.1
